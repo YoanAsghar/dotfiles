@@ -4,7 +4,7 @@
   min-height: 0;
   min-width: 0;
   font-family: Lexend, "JetBrainsMono NFP";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -19,7 +19,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: @background;
+  background-color: transparent;
   color: @foreground;
 }
 
@@ -29,13 +29,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background-color: @background;
+  background-color: transparent;
   color: @foreground;
   border-bottom: 2px solid @foreground;
 }
 
 #workspaces button.urgent {
-  background-color: @background;
+  background-color: transparent;
   color: @foreground;
 }
 
@@ -53,7 +53,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: @background;
+  background-color: transparent;
 }
 
 #mpris.playing {
