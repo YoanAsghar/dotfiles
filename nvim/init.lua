@@ -68,5 +68,4 @@ vim.opt.redrawtime = 10000
 vim.opt.maxmempattern = 20000
 
 --  Status bar config
-vim.opt.cmdheight = 1
 vim.opt.laststatus = 3
