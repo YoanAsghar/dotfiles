@@ -16,10 +16,6 @@ size = 16
 decorations = "None"
 opacity = 1
 
-[colors.primary]
-background = "#000000"
-foreground = "#ffffff"
-
 [keyboard]
 bindings = [
 { key = "Insert", mods = "Shift", action = "Paste" },

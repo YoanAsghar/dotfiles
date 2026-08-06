@@ -1,3 +1,5 @@
+@import "../omarchy/current/theme/waybar.css";
+
 * {
   min-height: 0;
   min-width: 0;
@@ -10,29 +12,31 @@ window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
   background-color: transparent;
+  border-bottom: 2px solid @accent;
 }
 
 #workspaces button {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: @background;
+  color: @foreground;
 }
 
 #workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: @background;
+  background-color: @foreground;
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
-  color: #89b4fa;
+  background-color: @background;
+  color: @foreground;
+  border-bottom: 2px solid @foreground;
 }
 
 #workspaces button.urgent {
-  background-color: #1e1e2e;
-  color: #f38ba8;
+  background-color: @background;
+  color: @foreground;
 }
 
 #clock,
@@ -49,20 +53,20 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #1e1e2e;
+  background-color: @background;
 }
 
 #mpris.playing {
-  color: #a6e3a1;
+  color: @foreground;
 }
 
 #mpris.paused {
-  color: #9399b2;
+  color: @foreground;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #585b70;
+  color: @foreground;
 }
 
 window#waybar.empty #window {
@@ -70,44 +74,44 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  color: #94e2d5;
+  color: @foreground;
 }
 
 #memory {
-  color: #cba6f7;
+  color: @foreground;
 }
 
 #clock {
-  color: #74c7ec;
+  color: @foreground;
 }
 
 #clock.simpleclock {
-  color: #89b4fa;
+  color: @foreground;
 }
 
 #window {
-  color: #cdd6f4;
+  color: @foreground;
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: @foreground;
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: @foreground;
 }
 
 #custom-logo {
-  color: #89b4fa;
+  color: @foreground;
 }
 
 #custom-power {
-  color: #f38ba8;
+  color: @foreground;
 }
 
 tooltip {
-  background-color: #181825;
-  border: 2px solid #89b4fa;
+  background-color: @background;
+  border: 2px solid @foreground;
 }
 
 #custom-weather {
